@@ -1,1 +1,103 @@
 /*  your css code here. If applicable */
+/* General Body Styling */
+body {
+  background-color: gray; /* Light gray background for the body */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+.header {
+  background-color: #011e29; /* Dark background for header */
+  color: white; /* White text color */
+  width: 100%;
+  padding: 20px 0; /* Padding for spacing */
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0; /* Remove margin from header text */
+  font-size: 2.5rem; /* Larger font size for the title */
+}
+
+/* Latest News Section Styling */
+.latest-news-section {
+  background-color: #fff; /* Dark background color */
+  color: #000; /* White text */
+  padding: 20px;
+	margin:5px;
+ /* Margin for spacing from other sections */
+  border-radius: 8px; /* Rounded corners for the section */
+}
+
+.latest-news-section h2 {
+  margin-top: 0; /* Remove top margin from h2 */
+}
+
+.latest-news-section ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.latest-news-section li {
+  font-size: 1.2rem; /* Font size for list items */
+  margin-bottom: 10px; /* Space between each news item */
+}
+
+/* Pictorial News Section Styling */
+.pictorial-news-section {
+  text-align: center; /* Center the content */
+	margin:5px;
+	border-radius: 8px;
+  /* width: 80%; */
+  /* max-width: 800px; */
+}
+
+.pictorial-news-section h3 {
+  color: #011e29; /* Dark color for the section title */
+  font-size: 1.8rem;
+}
+
+.news-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.flex{
+	display:flex;
+	align-items:top;
+	/* flex-wrap:wrap; */
+}
+.pictorial-news-section{
+	background:#fff;
+	margin:5px;
+}
+.center{
+	background:#fff;
+	text-align:center;
+	border-radius: 8px;
+	margin:5px 0;
+}
+.news-images img {
+  width: 30%; /* Set width of the images */
+  border-radius: 8px; /* Rounded corners for images */
+  border: 5px solid #ccc; /* Light border around images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around images */
+}
+
+/* Optional: Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .news-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-images img {
+    width: 80%; /* Make images larger on small screens */
+    margin-bottom: 20px; /* Add margin between images */
+  }
+}
